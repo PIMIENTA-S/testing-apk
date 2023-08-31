@@ -14,3 +14,5 @@ Finally, you'll learn how to make webpages that respond to different screen size
 CSS tells the browser how to display your webpage. You can use CSS to set the color, font, size, and other aspects of HTML elements.
 
 In this course, you'll learn CSS by designing a menu page for a cafe webpage.
+
+![Captura de pantalla 2023-08-31 124923](https://github.com/PIMIENTA-S/BeginnerProjects/assets/80433456/17cee3e8-23da-43be-b433-216be1f57403)
