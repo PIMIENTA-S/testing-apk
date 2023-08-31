@@ -9,7 +9,7 @@ First, you'll build a cat photo app to learn the basics of HTML and CSS. Later, 
 Finally, you'll learn how to make webpages that respond to different screen sizes by building a photo gallery with Flexbox, and a magazine article layout with CSS Grid.
 
 ---
-Projets number 2
+## Projets number 2
 
 CSS tells the browser how to display your webpage. You can use CSS to set the color, font, size, and other aspects of HTML elements.
 
