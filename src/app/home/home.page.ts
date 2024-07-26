@@ -1,12 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
+import { App } from '@capacitor/app';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
-  constructor() {}
+  constructor(private browser: InAppBrowser) {}
+  
+  ngOnInit(): void {
+    const browserInstance = this.browser.create(
+      "https://repair-service-psi.vercel.app/", 
+      "_self", 
+      "location=no, hidenavigationbuttons=true,zoom=no")
+      browserInstance.on('exit').subscribe(e => {
+        App.exitApp()
+      })
+  }
 
 }
