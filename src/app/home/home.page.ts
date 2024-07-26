@@ -13,10 +13,11 @@ export class HomePage implements OnInit {
   
   ngOnInit(): void {
     const browserInstance = this.browser.create(
-      "https://repair-service-psi.vercel.app/", 
-      "_self", 
-      "location=no, hidenavigationbuttons=true,zoom=no")
-      browserInstance.on('exit').subscribe(e => {
+      'https://repair-service-psi.vercel.app/', 
+      '_self', 
+      'location=no, hidenavigationbuttons=true,zoom=no'
+    );
+      browserInstance.on('exit').subscribe((evt) => {
         App.exitApp()
       })
   }

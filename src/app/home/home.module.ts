@@ -16,6 +16,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     HomePageRoutingModule
   ],
   providers: [InAppBrowser],
+  
   declarations: [HomePage]
 })
 export class HomePageModule {}
